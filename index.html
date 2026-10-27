@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parabéns, Rita! 66 anos</title>
+  <meta name="description" content="Uma homenagem de aniversário feita com carinho para a Rita.">
+  <meta name="theme-color" content="#FBF1F3">
+  <!-- Site pessoal: pede aos buscadores para não indexar. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <span class="site-header__brand">Rita, 66</span>
+      <nav class="site-nav" aria-label="Seções da página">
+        <a href="#carta">Carta</a>
+        <a href="#fotos">Nossas fotos</a>
+        <a href="#motivos">Motivos</a>
+        <a href="#recados">Recados</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INÍCIO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="eyebrow">27 de outubro de 2026</span>
+          <h1 class="hero__title">Parabéns, <em>Rita!</em></h1>
+          <div class="hero__age">
+            <span class="hero__rule" aria-hidden="true"></span>
+            <span class="hero__age-text">66 anos</span>
+          </div>
+          <p class="hero__lead">Tenho orgulho da mulher que você é e amo você mais do que consigo dizer.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#carta">Abrir minha carta</a>
+            <a class="btn btn--outline" href="#motivos">Ver os 66 motivos</a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <div class="hero__photo">
+            <img src="assets/images/hero.jpg" alt="Giorgio beijando o rosto da mãe, abraçados">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section section--alt" id="carta">
+      <div class="container carta">
+        <span class="eyebrow">Uma carta para você</span>
+        <h2 class="section__title">Mãe, hoje o dia é todo seu</h2>
+        <p>Você, pra mim, é tudo o que eu quero ser. Você representa força e amor, tudo o que eu conheço como forma de amar. Representa a força que me move, sempre tentando ser melhor cada vez mais, e representa o amor, o carinho e o abrigo.</p>
+        <p>Tenho várias lembranças, mas gosto daquelas em que estamos juntos cantando músicas e dançando na cozinha, no quarto ou na sala, todos os momentos de abraço e cada "eu te amo" dito. Todas essas são especiais e eternizadas no meu coração com muito amor.</p>
+        <p>Espero viver mais momentos como esses, momentos simples, com a gente no nosso pequeno mundo, cantando e dançando, em momentos felizes e de muita risada, e naqueles que só o amor cura. Eu te amo mais do que eu me amo, porque eu sou a extensão do seu amor.</p>
+        <p class="carta__sign">Com todo o meu amor, Giorgio</p>
+      </div>
+    </section>
+
+    <!-- FOTOS -->
+    <section class="section" id="fotos">
+      <div class="container stack stack--lg">
+        <div class="section__head">
+          <span class="eyebrow">Nossa história</span>
+          <h2 class="section__title">Momentos que ficam</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--landscape">
+            <div class="photo photo--landscape">
+              <img src="assets/images/familia-antiga.jpg" alt="Foto antiga de família: um casal sorrindo com uma criança pequena" loading="lazy">
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--square">
+            <div class="photo photo--square">
+              <img src="assets/images/beijo-festa.jpg" alt="Giorgio beijando o rosto da mãe numa festa" loading="lazy">
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--square">
+            <div class="photo photo--square">
+              <img src="assets/images/formatura.jpg" alt="Formatura: Giorgio de beca, abraçado a um homem e à mãe" loading="lazy">
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--landscape">
+            <div class="photo photo--landscape">
+              <img src="assets/images/praca-alimentacao.jpg" alt="Selfie de Giorgio com a família em volta de uma mesa de praça de alimentação" loading="lazy">
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--tall">
+            <div class="photo photo--tall">
+              <img src="assets/images/espelho.jpg" alt="Selfie no espelho: Giorgio abraçado à mãe" loading="lazy">
+            </div>
+          </figure>
+          <figure class="gallery__item gallery__item--portrait">
+            <div class="photo photo--portrait">
+              <img src="assets/images/bolo.jpg" alt="A mãe sorrindo, segurando um bolo decorado com laço vermelho" loading="lazy">
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTIVOS (os textos ficam em js/script.js) -->
+    <section class="section section--alt" id="motivos">
+      <div class="container stack stack--lg">
+        <div class="section__head">
+          <span class="eyebrow">66 anos, 66 motivos</span>
+          <h2 class="section__title">Por que eu te amo</h2>
+          <p class="section__hint">Toque em cada cartão para virar.</p>
+        </div>
+        <div class="motivos" id="motivos-grid"></div>
+      </div>
+    </section>
+
+    <!-- RECADOS EM VÍDEO -->
+    <section class="section" id="recados">
+      <div class="container stack stack--lg">
+        <div class="section__head">
+          <span class="eyebrow">Quem te ama</span>
+          <h2 class="section__title">Recados da família</h2>
+        </div>
+        <div class="videos">
+
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <video src="assets/videos/giane.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Vídeo de parabéns da Giane"></video>
+            </div>
+            <figcaption>Giane</figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <video src="assets/videos/jorge.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Vídeo de parabéns do Jorge"></video>
+            </div>
+            <figcaption>Jorge</figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="video-card__frame">
+              <video src="assets/videos/rafaella.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Vídeo de parabéns da Rafaella"></video>
+            </div>
+            <figcaption>Rafaella</figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="video-card__frame video-card__frame--empty">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z"></path></svg>
+              <span>[VÍDEO 4]</span>
+            </div>
+            <figcaption>[NOME]</figcaption>
+          </figure>
+
+          <figure class="video-card">
+            <div class="video-card__frame video-card__frame--empty">
+              <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10 8.5l5.5 3.5-5.5 3.5z"></path></svg>
+              <span>[VÍDEO 5]</span>
+            </div>
+            <figcaption>[NOME]</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="site-footer__title">Feliz aniversário, mãe.</span>
+    <span class="site-footer__note">Feito com carinho por Giorgio · 27/10/2026</span>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

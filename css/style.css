@@ -1,0 +1,415 @@
+/* ==========================================================
+   Parabéns, Rita! — estilos
+   ========================================================== */
+
+:root {
+  --bg: #FBF1F3;
+  --bg-alt: #F5E1E7;
+  --ink: #4A1230;
+  --ink-dark: #3A0D26;
+  --muted: #6E4A5A;
+  --line: #B98FA0;
+  --placeholder: #F2DCE3;
+  --accent: #B8893A;       /* dourado dos detalhes */
+  --link-hover: #8A2A5C;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Nunito Sans', system-ui, sans-serif;
+
+  --gutter: 20px;
+  --max-width: 1120px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--ink); }
+a:hover { color: var(--link-hover); }
+
+img,
+video { max-width: 100%; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+[hidden] { display: none !important; }
+
+/* ---------- Layout base ---------- */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section { padding: 88px var(--gutter); }
+.section--alt { background: var(--bg-alt); }
+
+.stack { display: flex; flex-direction: column; gap: 24px; }
+.stack--lg { gap: 40px; }
+
+.section__head {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.section__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(36px, 6vw, 48px);
+  line-height: 1.05;
+}
+
+.section__hint {
+  margin: 0;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 20px var(--gutter);
+}
+
+.site-header__brand {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.site-nav a {
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+/* ---------- Início ---------- */
+
+.hero { padding: 32px var(--gutter) 88px; }
+
+.hero__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero__text {
+  flex: 1 1 380px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(56px, 11vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+}
+
+.hero__title em { font-weight: 500; }
+
+.hero__age {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero__rule {
+  width: 56px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.hero__age-text {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.hero__lead {
+  margin: 0;
+  max-width: 460px;
+  font-size: 19px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn--primary:hover { color: var(--bg); background: var(--link-hover); }
+
+.btn--outline {
+  border: 2px solid var(--ink);
+  color: var(--ink);
+}
+
+.hero__photo-wrap {
+  flex: 1 1 320px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__photo {
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 4 / 5;
+  border: 3px solid var(--accent);
+  border-radius: 220px 220px 24px 24px;
+  overflow: hidden;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  display: block;
+}
+
+/* ---------- Carta ---------- */
+
+.carta {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.carta p {
+  margin: 0;
+  font-size: 19px;
+}
+
+.carta .carta__sign {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ---------- Galeria ---------- */
+/* Cada item tem flex-grow = proporção da foto, então as fotos
+   de uma mesma linha ficam com a mesma altura. */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery__item {
+  margin: 0;
+  min-width: 0;
+}
+
+.gallery__item--landscape { flex: 1.333 1 400px; }
+.gallery__item--square    { flex: 1 1 300px; }
+.gallery__item--tall      { flex: 0.5625 1 169px; }
+.gallery__item--portrait  { flex: 0.75 1 225px; }
+
+.photo {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.photo--landscape { aspect-ratio: 4 / 3; }
+.photo--square    { aspect-ratio: 1 / 1; }
+.photo--tall      { aspect-ratio: 9 / 16; }
+.photo--portrait  { aspect-ratio: 3 / 4; }
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Motivos ---------- */
+
+.motivos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.motivo {
+  flex: 1 1 150px;
+  min-width: 0;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  background: #FFFFFF;
+  color: var(--ink);
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.motivo.is-flipped {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.motivo__num {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.motivo__label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ---------- Vídeos ---------- */
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-card {
+  margin: 0;
+  flex: 1 1 200px;
+  max-width: 280px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.video-card figcaption { font-weight: 700; }
+
+.video-card__frame {
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--ink-dark);
+}
+
+.video-card__frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-card__frame--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border: 2px dashed var(--line);
+  background: var(--placeholder);
+  color: var(--muted);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ---------- Rodapé ---------- */
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px var(--gutter) 56px;
+  text-align: center;
+}
+
+.site-footer__title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.site-footer__note {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ---------- Telas pequenas ---------- */
+
+@media (max-width: 600px) {
+  .section { padding: 64px var(--gutter); }
+  .hero { padding-bottom: 64px; }
+  .hero__inner { gap: 32px; }
+}
